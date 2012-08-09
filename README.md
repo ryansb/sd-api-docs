@@ -16,7 +16,7 @@ Methods
 * Metrics
 * MongoDB
 * Processes
-* Services
+* [Services](sd-api-docs/blob/master/sections/services.md)
 * Users
 
 Endpoint
