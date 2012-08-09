@@ -14,6 +14,11 @@ Returns all configured services
 
 **Response**
 
+* `cT` - The last check time.
+* `sT` - The slow threshold in ms, above which the request will be considered "slow".
+* `uptime` - The raw check counts, including counts in each state.
+* `uptimeStats` - Calculated uptime percentages based on the `uptime` counts.
+
 ```json
 {
     "status": 1,
@@ -25,7 +30,7 @@ Returns all configured services
                 },
                 "accId": 1,
                 "avg_response_time": 240.21506309509,
-                "cT": {  /* Last check time */
+                "cT": {
                     "sec": 1344494035,
                     "usec": 64000
                 },
@@ -117,11 +122,11 @@ Returns all configured services
                     }
                 },
                 "response_time": 77,
-                "sT": 1500, /* Slow threshold in ms, above which will consider "slow" */
+                "sT": 1500,
                 "slow": false,
                 "status": "up",
                 "timeout": 10,
-                "uptime": {  /* Raw counts of number of checks */
+                "uptime": { 
                     "2012": {
                         "6": {
                             "count": 16640,
@@ -142,7 +147,7 @@ Returns all configured services
                 },
                 "url": "http://blog.serverdensity.com",
                 "verifySSL": false,
-                "uptimeStats": { /* % stats */
+                "uptimeStats": {
                     "2012": {
                         "6": {
                             "uptime": 100,
