@@ -25,7 +25,7 @@ Returns all configured services
                 },
                 "accId": 1,
                 "avg_response_time": 240.21506309509,
-                "cT": { # Last check time
+                "cT": {  /* Last check time */
                     "sec": 1344494035,
                     "usec": 64000
                 },
@@ -117,11 +117,11 @@ Returns all configured services
                     }
                 },
                 "response_time": 77,
-                "sT": 1500, # Slow threshold in ms, above which will consider "slow"
+                "sT": 1500, /* Slow threshold in ms, above which will consider "slow" */
                 "slow": false,
                 "status": "up",
                 "timeout": 10,
-                "uptime": { # Raw counts of number of checks
+                "uptime": {  /* Raw counts of number of checks */
                     "2012": {
                         "6": {
                             "count": 16640,
@@ -142,7 +142,7 @@ Returns all configured services
                 },
                 "url": "http://blog.serverdensity.com",
                 "verifySSL": false,
-                "uptimeStats": { # % stats
+                "uptimeStats": { /* % stats */
                     "2012": {
                         "6": {
                             "uptime": 100,
