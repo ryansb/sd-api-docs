@@ -37,7 +37,7 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/devices/add?account=llama.serverdensity.com&apiKey=KEY&name=Test+2&ip=10.0.0.2&location=Hat&provider=Cheese&notes=nope&userId=4cd97209023d06b231000000`
+`POST http://api.serverdensity.com/VERSION/devices/add?account=llama.serverdensity.com&name=Test+2&ip=10.0.0.2&location=Hat&provider=Cheese&notes=nope&userId=4cd97209023d06b231000000`
 
 
 Add aggregate
@@ -57,7 +57,7 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/devices/addAggregate?account=llama.serverdensity.com&apiKey=KEY&name=New%20Aggregate&deviceIds=4cd97209023d06b231000012,4cd98361417638365271&group=Groupname&showDashboard=1`
+`POST http://api.serverdensity.com/VERSION/devices/addAggregate?account=llama.serverdensity.com&name=New%20Aggregate&deviceIds=4cd97209023d06b231000012,4cd98361417638365271&group=Groupname&showDashboard=1`
 
 
 Add group
@@ -74,7 +74,7 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/devices/addGroup?account=llama.serverdensity.com&apiKey=KEY&name=Test+2`
+`POST http://api.serverdensity.com/VERSION/devices/addGroup?account=llama.serverdensity.com&name=Test+2`
 
 
 Delete
@@ -89,7 +89,7 @@ Marks the specified device for deletion and pauses all alerts. Devices are not d
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/devices/delete?account=llama.serverdensity.com&apiKey=KEY&deviceId=4ca70d15150ba0ce3c251001`
+`POST http://api.serverdensity.com/VERSION/devices/delete?account=llama.serverdensity.com&deviceId=4ca70d15150ba0ce3c251001`
 
 
 Edit aggregate
@@ -110,7 +110,7 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/devices/editAggregate?account=llama.serverdensity.com&apiKey=KEY&deviceid=4cd729879282342834&name=NewName&deviceIds=4cd97209023d06b231000012,4cd98361417638100001&group=Groupname&showDashboard=1`
+`POST http://api.serverdensity.com/VERSION/devices/editAggregate?account=llama.serverdensity.com&deviceid=4cd729879282342834&name=NewName&deviceIds=4cd97209023d06b231000012,4cd98361417638100001&group=Groupname&showDashboard=1`
 
 
 Get by group
@@ -125,7 +125,7 @@ Returns all devices belonging to the specified group.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/getByGroup?account=llama.serverdensity.com&apiKey=KEY&group=Hats`
+`GET http://api.serverdensity.com/VERSION/devices/getByGroup?account=llama.serverdensity.com&group=Hats`
 
 
 Get by host name
@@ -140,7 +140,7 @@ Returns the device with the specified hostname. This is an optional field set in
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/getByHostName?account=llama.serverdensity.com&apiKey=KEY&hostName=hats.example.com`
+`GET http://api.serverdensity.com/VERSION/devices/getByHostName?account=llama.serverdensity.com&hostName=hats.example.com`
 
 
 Get by id
@@ -155,7 +155,7 @@ Returns the device with the specified ID.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/getById?account=llama.serverdensity.com&apiKey=KEY&deviceId=4ca70d15150ba0ce3c251001`
+`GET http://api.serverdensity.com/VERSION/devices/getById?account=llama.serverdensity.com&deviceId=4ca70d15150ba0ce3c251001`
 
 
 Get by name
@@ -170,7 +170,7 @@ Returns the device with the specified name.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/getByName?account=llama.serverdensity.com&apiKey=KEY&name=Hats`
+`GET http://api.serverdensity.com/VERSION/devices/getByName?account=llama.serverdensity.com&name=Hats`
 
 
 List
@@ -186,7 +186,7 @@ Returns a list of all devices. Optionally provide limit and/or skip values to pe
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/list?account=llama.serverdensity.com&apiKey=KEY`
+`GET http://api.serverdensity.com/VERSION/devices/list?account=llama.serverdensity.com`
 
 
 List groups
@@ -198,7 +198,7 @@ Returns a list of all device groups.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/listGroups?account=llama.serverdensity.com&apiKey=KEY`
+`GET http://api.serverdensity.com/VERSION/devices/listGroups?account=llama.serverdensity.com`
 
 
 Count
@@ -210,7 +210,7 @@ Returns a count devices for the account.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/count?account=llama.serverdensity.com&apiKey=KEY`
+`GET http://api.serverdensity.com/VERSION/devices/count?account=llama.serverdensity.com`
 
 
 Rename
@@ -226,4 +226,4 @@ Renames the specified device with the new specified name.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/devices/rename?account=llama.serverdensity.com&apiKey=KEY&deviceId=4ca70d15150ba0ce3c251001&newName=Cheese`
+`GET http://api.serverdensity.com/VERSION/devices/rename?account=llama.serverdensity.com&deviceId=4ca70d15150ba0ce3c251001&newName=Cheese`
