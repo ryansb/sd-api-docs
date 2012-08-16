@@ -10,7 +10,7 @@ Returns all configured services
 
 **Request**
 
-`https://api.serverdensity.com/1.4/services/list?account=example.serverdensity.com`
+`https://api.serverdensity.com/VER/services/list?account=llama.serverdensity.com`
 
 **Response**
 

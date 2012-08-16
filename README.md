@@ -41,7 +41,7 @@ Authentication is through Basic HTTP Auth against your Server Density account. E
 
 **Example**
 
-    https://username:password@api.serverdensity.com/1.4/alerts/list?account=llama.serverdensity.com
+    https://username:password@api.serverdensity.com/VER/alerts/list?account=llama.serverdensity.com
 
 **API keys**
 
