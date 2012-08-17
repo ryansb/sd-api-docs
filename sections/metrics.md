@@ -427,7 +427,7 @@ You cannot post back more often than every 60 seconds. You will receive an error
 
 **Example 1 - Load Average**
 
-To post back the load average your payload would look like this:
+`payload` json:
 
 ```json
 { 	
@@ -454,6 +454,8 @@ Response:
 ```
 
 **Example 2 - Network Taffic**
+
+`payload` json:
 
 ```json
 {
@@ -487,7 +489,9 @@ Response:
 }
 ```
 
-**Eample 3 - `MongoDBCount` plugin**
+**Example 3 - `MongoDBCount` plugin**
+
+`payload` json:
 
 ```json
 {
