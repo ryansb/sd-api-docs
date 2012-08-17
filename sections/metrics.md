@@ -15,7 +15,7 @@ Returns the latest values for all metrics for the specified server.
 
 **Parameters**
 
-* `deviceId` *string*- use the devices/list method to find the deviceId
+* `deviceId` *string* use the `devices/list` method to find the deviceId
 
 **Request**
 
@@ -304,11 +304,11 @@ Returns the time series values for the specified metric between the specified da
 
 **Parameters**
 
-* `deviceId` *string*- use the `devices/list` method to find the deviceId.
-* `serviceId` *string*- use the `services/list` method to find the deviceId.
+* `deviceId` *string* use the `devices/list` method to find the deviceId.
+* `serviceId` *string* use the `services/list` method to find the deviceId.
 * `metric` *string*.
-* `rangeStart` *- string*UTC start time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
-* `rangeEnd` *- string*UTC end time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
+* `rangeStart` *string* UTC start time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
+* `rangeEnd` *string* UTC end time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
 
 **Metrics**
 
@@ -406,8 +406,8 @@ Post back metrics without needing the agent.
 
 **Parameters**
 
-* `deviceId` *string* - use the `devices/list` method to find the deviceId
-* `payload` *string* - A JSON payload containing the metrics.
+* `deviceId` *string* use the `devices/list` method to find the deviceId
+* `payload` *string* A JSON payload containing the metrics.
 
 **Payload**
 
@@ -453,7 +453,7 @@ Response:
 }
 ```
 
-*Example 2 - Network Taffic**
+**Example 2 - Network Taffic**
 
 ```json
 {
@@ -487,7 +487,7 @@ Response:
 }
 ```
 
-To post back a plugin called MongoDBCount:
+**Eample 3 - `MongoDBCount` plugin**
 
 ```json
 {
