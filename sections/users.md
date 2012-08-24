@@ -130,6 +130,8 @@ curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/delet
 -d userId=503745f313bcb7fb00000000
 ```
 
+**Response**
+
 ```json
 {
     "status": 1,
@@ -242,6 +244,8 @@ Lists all users.
 **Request**
 
 `GET http://api.serverdensity.com/1.4/users/list?account=llama.serverdensity.com`
+
+**Response**
 
 ```json
 {
