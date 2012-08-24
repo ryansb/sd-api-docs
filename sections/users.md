@@ -34,8 +34,30 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/users/add?account=llama.serverdensity.com&apiKey=KEYusername=david&firstName=David&lastName=Mytton&timezone=Europe%2FLondon&password=password&groupPermissions=2&groups=Rackspace%2CTest+1`
+```bash
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/add?account=llama.serverdensity.com" \
+-d username=david \
+-d password=hat \
+-d firstName=David \
+-d lastName=Mytton \
+-d timezone=Europe%2FLondon \
+-d groupPermissions=2 \
+-d groups==Rackspace%2CTest+1
+```
 
+**Response**
+
+```json
+{
+    "status": 1,
+    "data": {
+        "userId": {
+            "$id": "503745f313bcb7fb00000000"
+        },
+        "userIdOld": 2
+    }
+}
+```
 
 Add email
 --
@@ -51,8 +73,18 @@ All parameter values should be URL encoded.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/users/addEmail?account=llama.serverdensity.com&apiKey=KEYemail=hello@boxedice.com`
+```
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/addEmail?account=llama.serverdensity.com" \
+-d email=hello%40serverdensity.com
+```
 
+**Response**
+
+```json
+{
+    "status": 1
+}
+```
 
 Add phone
 --
@@ -67,8 +99,19 @@ Adds a new phone number for the authenticated user.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/users/addPhone?account=llama.serverdensity.com&apiKey=KEYphone=123456789&countryCode=44`
+```
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/addPhone?account=llama.serverdensity.com" \
+-d phone=12345668 \
+-d countryCode=44
+```
 
+**Response**
+
+```json
+{
+    "status": 1
+}
+```
 
 Delete
 --
@@ -82,7 +125,19 @@ Deletes the specified user from the account.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/users/delete?account=llama.serverdensity.com&apiKey=KEY&userId=4ca70d15150ba0ce3c251001`
+```
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/delete?account=llama.serverdensity.com" \
+-d userId=503745f313bcb7fb00000000
+```
+
+```json
+{
+    "status": 1,
+    "data": {
+        "userDeleted": 1
+    }
+}
+```
 
 
 Delete email
@@ -97,7 +152,18 @@ Deletes the specified email address from the authenticated user.
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/users/deleteEmail?account=llama.serverdensity.com&apiKey=KEYemail=hello@boxedice.com`
+```
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/delete?account=llama.serverdensity.com" \
+-d email=hello%40serverdensity.com
+```
+
+**Response**
+
+```json
+{
+    "status": 1
+}
+```
 
 Delete phone
 --
@@ -110,10 +176,21 @@ Delete phone
 
 **Request**
 
-`POST http://api.serverdensity.com/VERSION/users/deletePhone?account=llama.serverdensity.com&apiKey=KEYphone=123456789&countryCode=44`
+```
+curl -v -O /dev/stdout --user USER "http://api.serverdensity.com/VER/users/deletePhone?account=llama.serverdensity.com" \
+-d phone=12345668 \
+-d countryCode=44
+```
 
+**Response**
 
-Get by id
+```json
+{
+    "status": 1
+}
+```
+
+Get by ID
 --
 `GET /users/getById`
 
@@ -125,8 +202,36 @@ Returns the specified user.
 
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/users/getById?account=llama.serverdensity.com&apiKey=KEY&userId=4ca70d15150ba0ce3c251001`
+`GET http://api.serverdensity.com/VER/users/getById?account=llama.serverdensity.com&userId=4ca70d15150ba0ce3c251001`
 
+**Response**
+
+```json
+{
+    "status": 1,
+    "data": {
+        "user": {
+            "fNm": "Admin",
+            "lNm": "Admin",
+            "uId": "50321f9113bcb7dd0f000004",
+            "adm": true,
+            "tz": "Europe/London",
+            "iPDT": "",
+            "emails": [
+                {
+                    "email": "hello@serverdensity.com"
+                }
+            ],
+            "phones": [
+                {
+                    "countryCode": 44,
+                    "phone": "12345668"
+                }
+            ]
+        }
+    }
+}
+```
 
 List
 --
@@ -134,7 +239,25 @@ List
 
 Lists all users.
 
-
 **Request**
 
-`GET http://api.serverdensity.com/VERSION/users/list?account=llama.serverdensity.com&apiKey=KEY `
+`GET http://api.serverdensity.com/1.4/users/list?account=llama.serverdensity.com`
+
+```json
+{
+    "status": 1,
+    "data": {
+        "users": [
+            {
+                "userId": "50321f9113bcb7dd0f000004",
+                "userIdOld": 1,
+                "username": "admin",
+                "firstName": "Admin",
+                "lastName": "Admin",
+                "admin": true,
+                "groups": null
+            }
+        ]
+    }
+}
+```
