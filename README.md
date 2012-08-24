@@ -15,7 +15,6 @@ Methods
 * [Devices](sd-api-docs/blob/master/sections/devices.md)
 * [Metrics](sd-api-docs/blob/master/sections/metrics.md)
 * [MongoDB](sd-api-docs/blob/master/sections/mongodb.md)
-* [Processes](sd-api-docs/blob/master/sections/processes.md)
 * [Services](sd-api-docs/blob/master/sections/services.md)
 * [Users](sd-api-docs/blob/master/sections/users.md)
 
