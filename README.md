@@ -28,6 +28,12 @@ All requests must access a specific API version, which is appended to the URL e.
 
 See the [Release Notes](sd-api-docs/blob/master/sections/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
 
+Post requests
+--
+Some methods use HTTP POST to pass parameters. These need to include the HTTP header:
+
+`Content-Type: application/x-www-form-urlencoded`
+
 Authentication
 --
 Authentication is through Basic HTTP Auth against your Server Density account. Each user has the same [permissions](http://support.serverdensity.com/knowledgebase/articles/76040-permissions) with access to the same devices and services as they do through the web UI.
