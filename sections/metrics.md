@@ -305,7 +305,7 @@ Returns the time series values for the specified metric between the specified da
 **Parameters**
 
 * `deviceId` *string* use the `devices/list` method to find the deviceId.
-* `serviceId` *string* use the `services/list` method to find the deviceId.
+* `serviceId` *string* use the `services/list` method to find the serviceId.
 * `metric` *string*.
 * `rangeStart` *string* UTC start time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
 * `rangeEnd` *string* UTC end time for the range, [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) formatted without a timezone.
