@@ -1,6 +1,7 @@
 Services
 ===
 * [List](#list) - returns all configured services.
+* [Regions Info](#regions-info) - returns info about monitoring node regions.
 
 List
 --
@@ -165,6 +166,114 @@ Returns all configured services
                 }
             }
         ]
+    }
+}
+```
+
+Regions Info
+--
+`GET /services/regionsInfo`
+
+**Request**
+
+`https://api.serverdensity.com/VER/services/regionsInfo?account=llama.serverdensity.com`
+
+**Response**
+
+```json
+{
+    "status": 1,
+    "data": {
+        "eu-west-1": {
+            "name": "Ireland - Dublin (Amazon)",
+            "location": {
+                "city": "Dublin",
+                "country": "Ireland",
+                "lat": "53.347778",
+                "long": "-6.259722"
+            },
+            "provider": "Amazon"
+        },
+        "eu-uk-1": {
+            "name": "UK - London (Rackspace)",
+            "location": {
+                "city": "London",
+                "country": "UK",
+                "lat": "51.507222",
+                "long": "-0.1275"
+            },
+            "provider": "Rackspace"
+        },
+        "ap-northeast-1": {
+            "name": "Japan - Tokyo (Amazon)",
+            "location": {
+                "city": "Tokyo",
+                "country": "Japan",
+                "lat": "35.689506",
+                "long": "139.6917"
+            },
+            "provider": "Amazon"
+        },
+        "ap-southeast-1": {
+            "name": "Singapore (Amazon)",
+            "location": {
+                "city": "Singapore",
+                "country": "Singapore",
+                "lat": "1.283333",
+                "long": "103.833333"
+            },
+            "provider": "Amazon"
+        },
+        "ap-aus-1": {
+            "name": "Australia - Sydney (Servers Australia)",
+            "location": {
+                "city": "Sydney",
+                "country": "Australia",
+                "lat": "-33.859972",
+                "long": "151.211111"
+            },
+            "provider": "Servers Australia"
+        },
+        "us-east-1": {
+            "name": "USA - Virginia (Amazon)",
+            "location": {
+                "city": "Virginia",
+                "country": "USA",
+                "lat": "37.540972",
+                "long": "-77.432889"
+            },
+            "provider": "Amazon"
+        },
+        "us-chi-1": {
+            "name": "USA - Chicago (Rackspace)",
+            "location": {
+                "city": "Chicago",
+                "country": "USA",
+                "lat": "41.881944",
+                "long": "-87.627778"
+            },
+            "provider": "Rackspace"
+        },
+        "us-west-1": {
+            "name": "USA - Northern California (Amazon)",
+            "location": {
+                "city": "Northern California",
+                "country": "USA",
+                "lat": "38.555556",
+                "long": "-121.468889"
+            },
+            "provider": "Amazon"
+        },
+        "sa-br-1": {
+            "name": "Brazil - São Paulo (Amazon)",
+            "location": {
+                "city": "São Paulo",
+                "country": "Brazil",
+                "lat": "-23.55",
+                "long": "-46.633333"
+            },
+            "provider": "Amazon"
+        }
     }
 }
 ```
