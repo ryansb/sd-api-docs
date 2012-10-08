@@ -13,6 +13,8 @@ Returns all configured services
 
 `https://api.serverdensity.com/VER/services/list?account=llama.serverdensity.com`
 
+You can specify an optional `regionsInfo=true` parameter which will include details about each monitoring region within the output for this call, instead of making a separate call to the regions info method below.
+
 **Response**
 
 * `cT` - The last check time.
