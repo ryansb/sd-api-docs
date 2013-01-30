@@ -366,7 +366,7 @@ Returns all configured alerts.
 
 **Parameters**
 
-* `deviceId[]` optional *string* - If specified, the list will be filtered to just the alerts configured for the specified deviceId.
+* `deviceId` optional *string* - If specified, the list will be filtered to just the alerts configured for the specified deviceId.
 
 **Request**
 
