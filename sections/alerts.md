@@ -5,7 +5,7 @@ Alerts
 * [Get history](#get-history) - returns the full history for each time a specific alert has been triggered.
 * [Get last](#get-last) - returns the last 5 triggered alerts across the whole account.
 * [Get open](#get-open) - returns the current open, non-fixed alerts.
-* [Get open notified](#get-open-notified)` - returns the current open, non-fixed alerts which have sent notifications.
+* [Get open notified](#get-open-notified) - returns the current open, non-fixed alerts which have sent notifications.
 * [List](#list) - returns all configured alerts.
 * [Pause](#pause) - pauses a specific alert.
 * [Resume](#resume) - resumes a specific alert.
@@ -363,6 +363,10 @@ List
 `GET /alerts/list`
 
 Returns all configured alerts.
+
+**Parameters**
+
+* `deviceId[]` optional *string* - If specified, the list will be filtered to just the alerts configured for the specified deviceId.
 
 **Request**
 
