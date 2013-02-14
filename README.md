@@ -11,12 +11,12 @@ And see [this support article for help with using curl](http://support.serverden
 
 Methods
 --
-* [Alerts](sd-api-docs/blob/master/sections/alerts.md)
-* [Devices](sd-api-docs/blob/master/sections/devices.md)
-* [Metrics](sd-api-docs/blob/master/sections/metrics.md)
-* [MongoDB](sd-api-docs/blob/master/sections/mongodb.md)
-* [Services](sd-api-docs/blob/master/sections/services.md)
-* [Users](sd-api-docs/blob/master/sections/users.md)
+* [Alerts](sections/alerts.md)
+* [Devices](sections/devices.md)
+* [Metrics](sections/metrics.md)
+* [MongoDB](sections/mongodb.md)
+* [Services](sections/services.md)
+* [Users](sections/users.md)
 
 Endpoint
 --
@@ -26,7 +26,7 @@ Versioning
 --
 All requests must access a specific API version, which is appended to the URL e.g. `https://api.serverdensity.com/1.4/`. 
 
-See the [Release Notes](sd-api-docs/blob/master/sections/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
+See the [Release Notes](sections/release-notes.md) for changes to the API. New versions will be announced on the [Server Density blog](http://blog.serverdensity.com).
 
 Post requests
 --
